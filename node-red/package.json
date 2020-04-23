@@ -1,0 +1,22 @@
+{
+  "name": "node-red-docker",
+  "version": "1.0.0",
+  "description": "Low-code programming for event-driven applications",
+  "homepage": "http://nodered.org",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/node-red/node-red-docker.git"
+  },
+  "main": "node_modules/node-red/red/red.js",
+  "scripts": {
+    "start": "node node_modules/node-red/red.js --settings settings.js --userDir EI_NAME/$EI_NAME $FLOW_NAME"
+  },
+  "dependencies": {
+    "node-red": "^1.0.4",
+    "node-red-contrib-motechat": "^1.2.7"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
